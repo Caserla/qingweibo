@@ -32,7 +32,7 @@ import com.sina.weibo.sdk.openapi.models.Comment;
 import com.sina.weibo.sdk.openapi.models.CommentList;
 import com.sina.weibo.sdk.openapi.models.Status;
 import com.squareup.picasso.Picasso;
-import com.viewpagerindicator.TitlePageIndicator;
+
 import com.wangdiaozhu.qingweibo.Constants.AccessTokenKeeper;
 import com.wangdiaozhu.qingweibo.Constants.Constants;
 import com.wangdiaozhu.qingweibo.R;

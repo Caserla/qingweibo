@@ -1,1 +1,1 @@
-include ':app', ':library', ':weiboSDK', ':libraryb'
+include ':app', ':weiboSDK', ':libraryb'
