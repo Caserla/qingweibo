@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item_status"
+    android:background="@color/color_main_white"
+    android:weightSum="1">
+    <View
+        android:id="@+id/placeholder"
+        style="@style/v_default_gray_line2" />
+    <!-- 微博正文用户信息 -->
+   <RelativeLayout
+       android:id="@+id/rl_user_head"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginRight="10dp">
+
+       <com.wangdiaozhu.qingweibo.view.CircleImageView
+           android:id="@+id/iv_user_icon"
+           android:src="@drawable/avatar_default"
+           android:layout_alignParentLeft="true"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           />
+       <TextView
+           android:layout_toRightOf="@id/iv_user_icon"
+           android:paddingLeft="15dp"
+           android:textSize="16sp"
+           android:id="@+id/tv_user_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="@color/color_text_select"
+           android:text="CCAV 5"/>
+       <TextView
+           android:paddingTop="6dp"
+           android:paddingLeft="15dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1分钟前"
+           android:textSize="13sp"
+           android:textColor="@color/color_text_normal"
+           android:layout_below="@+id/tv_user_name"
+           android:layout_toEndOf="@+id/iv_user_icon"
+           android:id="@+id/tv_create_at" />
+       <TextView
+           android:id="@+id/tv_create_from"
+           android:paddingLeft="10dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="来自iphone6s"
+           android:textSize="13sp"
+           android:textColor="@color/color_text_normal"
+           android:layout_alignBottom="@+id/tv_create_at"
+           android:layout_toEndOf="@+id/tv_create_at" />
+   </RelativeLayout>
+    <!-- 微博正文内容 -->
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:id="@+id/ll_weibo_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        >
+        <TextView
+            android:id="@+id/tv_weibo_text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:text="微博正文微博正文微博正文微博正文微博正文微博正文微博正文微博正文微博正文微博正文微博正文微博正文"
+            android:paddingBottom="10dp"
+            />
+
+        <com.wangdiaozhu.qingweibo.view.nineimageview.NineGridImageView
+
+            android:id="@+id/iv_weibo_text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar_default"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            app:imgGap="4dp"
+            app:showStyle="fill"
+            app:singleImgSize="120dp"
+            />
+
+    </LinearLayout>
+    <!-- 微博转发正文内容 -->
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:id="@+id/ll_weibo_ztext_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        android:background="@drawable/common_card_middle_background_highlighted"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_weibo_ztext_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:autoLink="web"
+            android:text="微博转发正文微博转发正文微博转发正文微博转发正文微博转发正文微博转发正文微博转发正文"
+            android:paddingBottom="10dp"/>
+
+        <com.wangdiaozhu.qingweibo.view.nineimageview.NineGridImageView
+
+            android:id="@+id/iv_weibo_ztext_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/common_card_middle_background_highlighted"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            app:imgGap="4dp"
+            app:showStyle="fill"
+            app:singleImgSize="120dp"
+
+           />
+
+    </LinearLayout>
+
+
+
+    <View
+
+        style="@style/v_default_gray_line2" />
+    <RelativeLayout
+        android:background="@color/color_main_white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    <TextView
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_zhuanfa"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="转发"/>
+    <TextView
+        android:paddingLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_zhuanfa"
+        android:id="@+id/tv_pinglun"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评论"/>
+    <TextView
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/tv_zan"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="赞"/>
+    </RelativeLayout>
+    <View
+
+        style="@style/v_default_gray_line3" />
+
+    <ListView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_white">
+    <RelativeLayout
+        android:background="@color/color_line"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:background="@null"
+            android:textColor="@drawable/selector_click_cancel"/>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_post_name"
+            android:textColor="#000"
+            android:text="  发评论"
+           android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"/>
+        </LinearLayout>
+        <Button
+
+            android:id="@+id/btn_send"
+            android:background="@drawable/buttonstyle"
+            android:text="发送"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:textColor="@color/color_dark_line"
+            android:clickable="false"
+             />
+
+
+    </RelativeLayout>
+    <View
+
+        style="@style/v_default_gray_line3"
+        />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="1">
+    <EditText
+        android:id="@+id/et_text"
+        android:background="@color/color_main_white"
+        android:hint="分享新鲜事..."
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <com.wangdiaozhu.qingweibo.view.nineimageview.NineGridImageView
+
+            android:id="@+id/ngi_image_add"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar_default"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            app:imgGap="4dp"
+            app:showStyle="fill"
+            app:singleImgSize="120dp"
+            />
+    </LinearLayout>
+
+    <View
+
+        style="@style/v_default_gray_line3"
+        />
+    <LinearLayout
+
+        android:background="@color/color_line"
+          android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/ib_picture"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/selector_click_picture_item"
+            android:paddingTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageButton
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/selector_click_mention_item"
+            android:paddingTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageButton
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/selector_click_trend_item"
+            android:paddingTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageButton
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/selector_click_emotion_item"
+            android:paddingTop="5dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <ImageButton
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/selector_click_add_item"
+            android:paddingTop="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+
+    </LinearLayout>
+    <View
+
+        style="@style/v_default_gray_line3"
+        />
+
+</LinearLayout>

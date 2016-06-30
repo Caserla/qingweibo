@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yueshi="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.wangdiaozhu.qingweibo.view.NoScrollViewPager
+        android:layout_weight="1"
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </com.wangdiaozhu.qingweibo.view.NoScrollViewPager>
+    <View
+        android:id="@+id/v_public_line"
+        style="@style/v_default_gray_line" />
+    <LinearLayout
+        android:id="@+id/ll_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_act_main_tab_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_main_white"
+        android:gravity="center_horizontal">
+
+        <com.wangdiaozhu.qingweibo.view.NavigationTabView
+            android:id="@+id/ntv_main_tab_home"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yueshi:navigation_icon_normal="@mipmap/tabbar_home"
+            yueshi:navigation_icon_selected="@mipmap/tabbar_home_selected"
+            yueshi:navigation_name_normal="@color/color_text_normal"
+            yueshi:navigation_name_selected="@color/color_text_select"
+            yueshi:navigation_text="@string/main_tab_home_text" />
+
+        <com.wangdiaozhu.qingweibo.view.NavigationTabView
+            android:id="@+id/ntv_main_tab_message"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yueshi:navigation_icon_normal="@mipmap/tabbar_message_center"
+            yueshi:navigation_icon_selected="@mipmap/tabbar_message_center_selected"
+            yueshi:navigation_name_normal="@color/color_text_normal"
+            yueshi:navigation_name_selected="@color/color_text_select"
+            yueshi:navigation_text="@string/main_tab_message_text" />
+
+        <ImageButton
+            android:id="@+id/nav_mian_tab_compose"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/selector_tabar_compose"
+            android:src="@mipmap/tabbar_compose_icon_add" />
+
+        <com.wangdiaozhu.qingweibo.view.NavigationTabView
+            android:id="@+id/ntv_main_tab_discover"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yueshi:navigation_icon_normal="@mipmap/tabbar_discover"
+            yueshi:navigation_icon_selected="@mipmap/tabbar_discover_selected"
+            yueshi:navigation_name_normal="@color/color_text_normal"
+            yueshi:navigation_name_selected="@color/color_text_select"
+            yueshi:navigation_text="@string/main_tab_discover_text" />
+
+        <com.wangdiaozhu.qingweibo.view.NavigationTabView
+            android:id="@+id/ntv_main_tab_profile"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            yueshi:navigation_icon_normal="@mipmap/tabbar_profile"
+            yueshi:navigation_icon_selected="@mipmap/tabbar_profile_selected"
+            yueshi:navigation_name_normal="@color/color_text_normal"
+            yueshi:navigation_name_selected="@color/color_text_select"
+            yueshi:navigation_text="@string/main_tab_profile_text" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

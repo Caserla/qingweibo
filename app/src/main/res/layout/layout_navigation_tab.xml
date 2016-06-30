@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_main_tab_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/tv_circle_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_main_tab_icon"
+            android:layout_marginRight="-10dip"
+            android:layout_marginTop="3dip"
+            android:background="@drawable/shape_tab_count_red_bg"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:minHeight="15dip"
+            android:minWidth="15dip"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_red_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_main_tab_icon"
+            android:layout_marginTop="3dip"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_red_point"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_main_tab_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/size_act_main_tab_desc" />
+
+</LinearLayout>

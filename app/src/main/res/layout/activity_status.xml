@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_status_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main_white"
+        >
+        <TextView
+
+            android:text="微博正文"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+
+            />
+
+<include layout="@layout/layout_public_status_title_left"
+    android:id="@+id/include"
+    />
+        <include layout="@layout/layout_public_status_title_right"/>
+    </RelativeLayout>
+    <View
+        style="@style/v_default_gray_line1"
+        />
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:layout_weight="1"
+        android:id="@+id/ssl_buttom_pagers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <include layout="@layout/status_text"
+            />
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+
+    <View
+        style="@style/v_default_gray_line1"
+        />
+
+    <!-- 微博正文底部按钮 -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_weibo_text_button"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+
+        android:background="@color/color_main_white"
+        >
+        <com.wangdiaozhu.qingweibo.view.IconButton
+
+            android:id="@+id/btn_transmit"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_card_middle_background"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:iconPadding="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/color_dark_line"
+            android:drawableLeft="@drawable/statusdetail_icon_retweet"
+            android:text="转发"/>
+
+        <View
+            android:paddingTop="10dp"
+            style="@style/vertail_light_gray_line"
+            android:paddingBottom="10dp"
+            />
+        <com.wangdiaozhu.qingweibo.view.IconButton
+            android:id="@+id/btn_comment"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_card_middle_background"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:iconPadding="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/color_dark_line"
+            android:drawableLeft="@drawable/statusdetail_icon_comment"
+            android:text="评论"/>
+
+        <View
+            style="@style/vertail_light_gray_line"/>
+        <com.wangdiaozhu.qingweibo.view.IconButton
+            android:id="@+id/btn_praise"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/common_card_middle_background"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/statusdetail_icon_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:iconPadding="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/color_dark_line"
+            android:text="赞"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

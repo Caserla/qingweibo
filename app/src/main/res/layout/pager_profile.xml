@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_line"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/color_main_white"
+        android:orientation="horizontal"
+        >
+        <com.wangdiaozhu.qingweibo.view.CircleImageView
+            android:id="@+id/clv_profile_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/avatar_default"
+            android:layout_gravity="center_vertical"
+            app:civ_border_width="0.2dp"
+            app:civ_border_color="@color/color_line"
+            />
+   <RelativeLayout
+       android:paddingLeft="25dp"
+       android:layout_gravity="center_vertical"
+       android:id="@+id/rl_profile"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+
+       <TextView
+           android:id="@+id/tv_user_name"
+           android:textColor="#000"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="TranceS2"
+           android:textStyle="bold"
+           android:textSize="14sp"
+           android:layout_alignParentTop="true"
+           android:layout_alignParentStart="true" />
+       <TextView
+         android:paddingTop="5dp"
+           android:id="@+id/tv_introduction"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tv_user_name"
+
+           android:text="简介：XXXXXXX"
+           android:textSize="10sp"
+           />
+   </RelativeLayout>
+    </LinearLayout>
+    <View
+
+        style="@style/v_default_gray_line1" />
+<LinearLayout
+    android:background="@color/color_main_white"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+
+    >
+    <LinearLayout
+        android:id="@+id/lv_status"
+        android:layout_weight="1.01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_status_count"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2217"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_status_name"
+            android:paddingTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微博"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lv_focus"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_focus_count"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2217"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_focus_name"
+            android:paddingTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lv_funs"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_funs_count"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2217"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_funs_name"
+            android:paddingTop="5dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粉丝"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</LinearLayout>
+    <View
+
+
+        style="@style/v_default_gray_line1" />
+
+</LinearLayout>

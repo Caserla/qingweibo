@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@color/color_main_white"
+    >
+<RelativeLayout
+    android:id="@+id/rl_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <com.wangdiaozhu.qingweibo.view.CircleImageView
+
+        android:id="@+id/clv_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/message_image_default"
+       />
+
+    <TextView
+        android:layout_toRightOf="@+id/clv_icon"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+         android:text=" @我的"
+         android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message_item_text" />
+
+    <ImageView
+        android:src="@drawable/messages_card_arrow"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+
+        />
+</RelativeLayout>
+    <View
+        android:layout_alignBottom="@+id/rl_text"
+        android:layout_marginTop="10dp"
+       android:layout_width="290dp"
+        android:layout_alignParentEnd="true"
+        style="@style/v_default_gray_line"
+        />
+
+
+</RelativeLayout>

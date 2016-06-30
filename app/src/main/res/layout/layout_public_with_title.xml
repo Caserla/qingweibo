@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_public_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/public_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/color_main_white">
+
+        <TextView
+            android:id="@+id/public_title_middle"
+            style="@style/style_frg_title_bar_title"
+            android:ellipsize="marquee"
+            android:text="@string/app_name" />
+
+        <include layout="@layout/layout_public_sub_title_left" />
+
+        <include layout="@layout/layout_public_sub_title_right" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_public_line"
+        style="@style/v_default_gray_line" />
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/adapter/MainGVAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/adapter/PhotoAlbumLVAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/adapter/PhotoWallAdapter.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/customviews/SquareRelativeLayout.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/model/PhotoAlbumLVItem.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/ui/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/ui/PhotoAlbumActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/ui/PhotoWallActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/utils/SDCardImageLoader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/utils/ScreenUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/java/com/wangdiaozhu/myapplication/utils/Utility.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/anim" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/drawable-hdpi" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/drawable-mdpi" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/drawable-xhdpi" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/drawable-xxhdpi" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/drawable/selector_back_arrow.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/drawable/selector_checkbox.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/drawable/xml_back_textcolor.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/layout/activity_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/layout/comm_topbar_ll.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/layout/main_gridview_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/layout/photo_album.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/layout/photo_album_lv_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/layout/photo_wall.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/layout/photo_wall_item.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/ImagePicker/src/main/res/values-w820dp/ids.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wangdiaozhu/qingweibo/activity/SelectPhotoActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/wangdiaozhu/qingweibo/view/IconButton.java" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

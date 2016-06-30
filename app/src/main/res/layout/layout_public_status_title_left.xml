@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_title_left"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:paddingLeft="10dp"
+    android:paddingRight="20dp"
+    android:layout_centerVertical="true"
+   >
+
+    <ImageView
+        android:paddingTop="2dp"
+        android:id="@+id/iv_public_title_left"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/IMAGE"
+        android:src="@drawable/com_taobao_tae_sdk_web_view_title_bar_back" />
+
+    <TextView
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingTop="2dp"
+        android:layout_toRightOf="@+id/iv_public_title_left"
+        android:id="@+id/tv_public_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="首页"
+        android:textColor="#000"
+        android:textSize="16sp"
+         />
+</RelativeLayout>

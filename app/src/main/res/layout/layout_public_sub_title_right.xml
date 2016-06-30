@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_title_right"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/iv_public_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:contentDescription="@null"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_public_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@drawable/selector_navbar_title"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
