@@ -45,11 +45,6 @@ public class ProfilePager extends BasePager {
         super(activity);
             mBitmapUtils = new BitmapUtils(mActivity);
     }
-
-
-
-
-
     @Override
     public void initData() {
         super.setTitleMiddleText("我");
